@@ -72,7 +72,7 @@ const faqs = [
   {
     pergunta: "Atende adolescentes?",
     resposta:
-      "Sim. O atendimento considera a etapa de vida, a autonomia progressiva e, quando necessário, o diálogo com responsáveis.",
+      "Sim. O atendimento considera a etapa de vida e, quando necessário, o diálogo com responsáveis.",
   },
   {
     pergunta: "Como agendar atendimento?",
@@ -233,14 +233,11 @@ export default function Home() {
             <p className="text-sm font-semibold tracking-[0.2em] text-[#1f6f9f] uppercase">Quem sou eu</p>
             <p className="mt-4 text-lg font-semibold text-[#123d66]">Eduardo Campos Borges Leal</p>
             <h2 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight tracking-normal text-[#122232] sm:text-4xl">
-              Uma clínica orientada pela presença, pela responsabilidade e pela singularidade de cada história.
+              Escuta ética, presença clínica e cuidado individualizado.
             </h2>
             <div className="mt-6 max-w-3xl space-y-4 text-base leading-7 text-[#4c5b68] sm:text-lg sm:leading-8">
               <p>
-                Psicólogo clínico, CRP 01/16621, especialista em Gestalt-terapia. Atendo adolescentes e adultos em um espaço de escuta, elaboração e cuidado.
-              </p>
-              <p>
-                A psicoterapia não oferece respostas prontas. Oferece um encontro sério, humano e cuidadoso para ampliar consciência e sustentar escolhas possíveis.
+                Psicólogo clínico, especialista em Gestalt-terapia, com atendimento presencial e online para adolescentes e adultos.
               </p>
             </div>
           </div>
@@ -257,7 +254,7 @@ export default function Home() {
               </h2>
             </div>
             <p className="max-w-md text-sm leading-6 text-[#5a6977] sm:text-base sm:leading-7">
-              Cada processo respeita o ritmo, a história e o contexto de vida de quem procura atendimento.
+              Cada processo respeita o ritmo e a história de quem procura atendimento.
             </p>
           </div>
           <div className="mt-10 grid gap-4 md:grid-cols-2 lg:mt-12 lg:grid-cols-3">
@@ -296,13 +293,13 @@ export default function Home() {
           <div className="rounded-md border border-white/12 bg-white/[0.06] p-6 shadow-[0_36px_100px_rgba(0,0,0,0.24)] backdrop-blur-md sm:p-9">
             <div className="space-y-4 text-base leading-7 text-[#dce7f0] sm:text-lg sm:leading-8">
               <p>
-                A Gestalt-terapia compreende a pessoa em sua totalidade: corpo, emoções, vínculos e contexto.
+                A Gestalt-terapia considera corpo, emoções, vínculos e contexto.
               </p>
               <p>
-                No processo terapêutico, a atenção se volta ao encontro e à forma como cada pessoa se percebe e se relaciona.
+                A atenção se volta ao encontro e à forma como cada pessoa se percebe.
               </p>
               <p>
-                Com segurança e presença, torna-se possível reconhecer padrões e construir escolhas mais responsáveis.
+                Com presença, torna-se possível reconhecer padrões e construir novas escolhas.
               </p>
             </div>
           </div>
@@ -356,7 +353,7 @@ export default function Home() {
           </div>
           <div className="rounded-md border border-[#d5e0e9] bg-white/88 p-6 shadow-[0_28px_80px_rgba(18,34,50,0.08)] backdrop-blur sm:p-9">
             <p className="text-base leading-7 text-[#465562] sm:text-lg sm:leading-8">
-              A psicoterapia online oferece continuidade e privacidade para quem está no Brasil ou vive fora do país.
+              Continuidade, privacidade e escuta em português para brasileiros no Brasil e no exterior.
             </p>
             <div className="mt-6 grid gap-3 sm:grid-cols-3">
               {["Sigilo profissional", "Horários alinhados", "Escuta em português"].map((item) => (
@@ -405,10 +402,10 @@ export default function Home() {
           <div>
             <p className="text-sm font-semibold tracking-[0.2em] text-[#1f6f9f] uppercase">Contato</p>
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-normal text-[#122232] sm:text-4xl">
-              Para iniciar um acompanhamento, envie uma mensagem com tranquilidade.
+              Agende seu atendimento
             </h2>
             <p className="mt-5 max-w-xl text-base leading-7 text-[#4d5c69] sm:text-lg sm:leading-8">
-              O primeiro contato pode ser breve. Depois, são alinhados disponibilidade e formato.
+              Atendimento presencial e online para adolescentes e adultos.
             </p>
           </div>
           <div className="rounded-md border border-[#d1dde7] bg-white p-6 shadow-[0_28px_80px_rgba(18,34,50,0.1)] sm:p-9">

@@ -440,6 +440,14 @@ export default function Home() {
           <p>Atendimento psicológico presencial e online para adolescentes e adultos.</p>
         </div>
       </footer>
+
+      <a
+        href="https://wa.me/5561999027212"
+        aria-label="Agendar pelo WhatsApp"
+        className="fixed bottom-5 right-5 z-50 flex h-13 w-13 items-center justify-center rounded-full border border-white/20 bg-[#123d66] text-sm font-semibold text-white shadow-[0_18px_45px_rgba(18,34,50,0.24)] transition duration-300 hover:-translate-y-1 hover:bg-[#0d3154] hover:shadow-[0_24px_60px_rgba(18,34,50,0.28)] active:translate-y-0 sm:bottom-7 sm:right-7 sm:h-14 sm:w-14"
+      >
+        <span aria-hidden="true">WA</span>
+      </a>
     </main>
   );
 }

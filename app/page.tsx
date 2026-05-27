@@ -88,7 +88,7 @@ const faqs = [
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#f7f9fc] text-[#1d2935]">
+    <main className="bg-[#f7f9fc] text-[#1d2935]">
       <style>{`html { scroll-behavior: smooth; }`}</style>
 
       <section className="relative isolate overflow-hidden bg-[linear-gradient(135deg,#fbfcfe_0%,#edf4f9_45%,#ffffff_100%)]">
@@ -135,7 +135,7 @@ export default function Home() {
 
         <div
           id="inicio"
-          className="relative z-10 mx-auto grid max-w-7xl items-center gap-8 px-5 pb-10 pt-25 sm:min-h-screen sm:px-8 sm:pb-16 sm:pt-28 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-10 lg:pb-24 lg:pt-34"
+          className="relative z-10 mx-auto grid max-w-7xl items-center gap-7 px-5 pb-8 pt-22 sm:px-8 sm:pb-14 sm:pt-26 lg:min-h-screen lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-10 lg:pb-24 lg:pt-34"
         >
           <div className="max-w-3xl">
             <div className="mb-5 flex items-center gap-4 sm:mb-9">
@@ -189,7 +189,7 @@ export default function Home() {
                   width={1066}
                   height={1600}
                   priority
-                  className="aspect-[4/4.75] w-full object-cover object-[50%_68%] transition duration-700 hover:scale-[1.012] sm:aspect-[4/5] lg:object-[50%_64%]"
+                  className="aspect-[4/4.25] w-full object-cover object-[50%_70%] transition duration-700 hover:scale-[1.012] sm:aspect-[4/5] lg:object-[50%_64%]"
                 />
               </div>
               <div className="absolute bottom-4 left-4 right-4 rounded-md border border-white/60 bg-white/90 px-4 py-3 shadow-[0_24px_70px_rgba(18,34,50,0.16)] backdrop-blur-md sm:bottom-5 sm:left-5 sm:right-5 sm:px-5 sm:py-4">
@@ -214,8 +214,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="quem-sou" className="overflow-hidden bg-white px-5 py-12 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-8 sm:gap-11 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-16">
+      <section id="quem-sou" className="overflow-hidden bg-white px-5 py-10 sm:px-8 sm:py-20 lg:px-10 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-7 sm:gap-11 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-16">
           <div className="relative">
             <div className="absolute -left-10 top-10 hidden h-[78%] w-24 bg-[#eef4f9] lg:block" />
             <div className="absolute -right-5 -top-5 hidden h-full w-full rounded-md border border-[#c2d2df] lg:block" />
@@ -244,7 +244,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="atuacao" className="bg-[linear-gradient(180deg,#f4f8fb_0%,#eef4f9_100%)] px-5 py-12 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
+      <section id="atuacao" className="bg-[linear-gradient(180deg,#f4f8fb_0%,#eef4f9_100%)] px-5 py-10 sm:px-8 sm:py-20 lg:px-10 lg:py-28">
         <div className="mx-auto max-w-7xl">
           <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
@@ -277,7 +277,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="abordagem" className="relative overflow-hidden bg-[#101f2e] px-5 py-12 text-white sm:px-8 sm:py-22 lg:px-10 lg:py-30">
+      <section id="abordagem" className="relative overflow-hidden bg-[#101f2e] px-5 py-10 text-white sm:px-8 sm:py-20 lg:px-10 lg:py-30">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(90,144,184,0.28),transparent_34%),linear-gradient(135deg,#101f2e_0%,#152d42_54%,#0d1a27_100%)]" />
         <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(143,194,230,0.85),transparent)]" />
         <div className="relative mx-auto grid max-w-7xl gap-7 sm:gap-10 lg:grid-cols-[0.84fr_1.16fr] lg:items-start lg:gap-14">
@@ -306,7 +306,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#122232] px-5 py-12 text-white sm:px-8 sm:py-22 lg:px-10 lg:py-28">
+      <section className="bg-[#122232] px-5 py-10 text-white sm:px-8 sm:py-20 lg:px-10 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-8 sm:gap-11 lg:grid-cols-2 lg:gap-14">
           <div>
             <p className="text-sm font-semibold tracking-[0.2em] text-[#8fc2e6] uppercase">Formação acadêmica</p>
@@ -343,7 +343,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[linear-gradient(135deg,#f8fafc_0%,#edf4f9_100%)] px-5 py-12 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
+      <section className="bg-[linear-gradient(135deg,#f8fafc_0%,#edf4f9_100%)] px-5 py-10 sm:px-8 sm:py-20 lg:px-10 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-7 sm:gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <p className="text-sm font-semibold tracking-[0.2em] text-[#1f6f9f] uppercase">Atendimento online</p>
@@ -375,7 +375,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="faq" className="bg-white px-5 py-12 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
+      <section id="faq" className="bg-white px-5 py-10 sm:px-8 sm:py-20 lg:px-10 lg:py-28">
         <div className="mx-auto max-w-5xl">
           <p className="text-sm font-semibold tracking-[0.2em] text-[#1f6f9f] uppercase">FAQ</p>
           <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-normal text-[#122232] sm:text-4xl">
@@ -397,7 +397,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contato" className="bg-[#eef4f9] px-5 py-12 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
+      <section id="contato" className="bg-[#eef4f9] px-5 py-10 sm:px-8 sm:py-20 lg:px-10 lg:py-28">
         <div className="mx-auto grid max-w-7xl gap-7 sm:gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <p className="text-sm font-semibold tracking-[0.2em] text-[#1f6f9f] uppercase">Contato</p>

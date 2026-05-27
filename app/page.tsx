@@ -144,7 +144,7 @@ export default function Home() {
             </div>
 
             <h1 className="max-w-3xl text-[2.55rem] font-semibold leading-[1.05] tracking-normal text-[#122232] sm:text-[3.55rem] lg:text-[4.35rem]">
-              Eduardo Campos Borges Leal
+              Eduardo Leal
             </h1>
 
             <div className="mt-6 space-y-1.5 border-l border-[#9fb8cc] pl-4 sm:mt-7 sm:pl-5">

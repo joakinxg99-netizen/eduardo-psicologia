@@ -175,37 +175,40 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="mt-8 grid max-w-2xl grid-cols-1 gap-2.5 sm:mt-10 sm:grid-cols-2 sm:gap-3">
+          </div>
+
+          <div className="mx-auto w-full max-w-[560px] sm:max-w-[620px] lg:mr-0">
+            <div className="relative">
+              <div className="absolute -left-6 top-12 h-[80%] w-[72%] rounded-md bg-[linear-gradient(180deg,#d6e5f0,#eef4f9)] shadow-[0_34px_90px_rgba(18,34,50,0.1)]" />
+              <div className="absolute -right-5 -top-5 h-34 w-34 rounded-full border border-[#a9bdce]/70" />
+              <div className="absolute -bottom-6 right-10 h-24 w-44 rounded-md border border-white/80 bg-white/55 shadow-[0_22px_55px_rgba(18,34,50,0.08)] backdrop-blur-md" />
+              <div className="relative overflow-hidden rounded-md border border-white bg-white shadow-[0_42px_105px_rgba(18,34,50,0.22)]">
+                <Image
+                  src="/eduardo-hero.jpeg"
+                  alt="Retrato profissional de Eduardo Campos Borges Leal sentado em cadeira"
+                  width={1066}
+                  height={1600}
+                  priority
+                  className="aspect-[4/4.75] w-full object-cover object-[50%_68%] transition duration-700 hover:scale-[1.012] sm:aspect-[4/5] lg:object-[50%_64%]"
+                />
+              </div>
+              <div className="absolute bottom-4 left-4 right-4 rounded-md border border-white/60 bg-white/90 px-4 py-3 shadow-[0_24px_70px_rgba(18,34,50,0.16)] backdrop-blur-md sm:bottom-5 sm:left-5 sm:right-5 sm:px-5 sm:py-4">
+                <p className="text-sm font-semibold text-[#122232]">Atendimento presencial e online</p>
+                <p className="mt-1 text-sm leading-6 text-[#586776]">
+                  Adolescentes, adultos e brasileiros no exterior.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-4 flex flex-wrap gap-2 sm:mt-5 sm:gap-2.5">
               {trustBadges.map((badge) => (
                 <div
                   key={badge}
-                  className="rounded-md border border-[#d2dee8] bg-white/72 px-4 py-2.5 text-sm font-semibold text-[#223241] shadow-[0_14px_36px_rgba(18,34,50,0.055)] backdrop-blur transition duration-300 hover:border-[#9db7ca] hover:bg-white sm:py-3"
+                  className="rounded-md border border-[#d2dee8] bg-white/70 px-2.5 py-1.5 text-[0.72rem] font-semibold leading-4 text-[#223241] shadow-[0_8px_22px_rgba(18,34,50,0.04)] backdrop-blur transition duration-300 hover:border-[#9db7ca] hover:bg-white sm:px-3 sm:py-2 sm:text-xs"
                 >
                   {badge}
                 </div>
               ))}
-            </div>
-          </div>
-
-          <div className="relative mx-auto w-full max-w-[560px] sm:max-w-[620px] lg:mr-0">
-            <div className="absolute -left-6 top-12 h-[80%] w-[72%] rounded-md bg-[linear-gradient(180deg,#d6e5f0,#eef4f9)] shadow-[0_34px_90px_rgba(18,34,50,0.1)]" />
-            <div className="absolute -right-5 -top-5 h-34 w-34 rounded-full border border-[#a9bdce]/70" />
-            <div className="absolute -bottom-6 right-10 h-24 w-44 rounded-md border border-white/80 bg-white/55 shadow-[0_22px_55px_rgba(18,34,50,0.08)] backdrop-blur-md" />
-            <div className="relative overflow-hidden rounded-md border border-white bg-white shadow-[0_42px_105px_rgba(18,34,50,0.22)]">
-              <Image
-                src="/eduardo-hero.jpeg"
-                alt="Retrato profissional de Eduardo Campos Borges Leal sentado em cadeira"
-                width={1066}
-                height={1600}
-                priority
-                className="aspect-[4/4.75] w-full object-cover object-[50%_68%] transition duration-700 hover:scale-[1.012] sm:aspect-[4/5] lg:object-[50%_64%]"
-              />
-            </div>
-            <div className="absolute bottom-4 left-4 right-4 rounded-md border border-white/60 bg-white/90 px-4 py-3 shadow-[0_24px_70px_rgba(18,34,50,0.16)] backdrop-blur-md sm:bottom-5 sm:left-5 sm:right-5 sm:px-5 sm:py-4">
-              <p className="text-sm font-semibold text-[#122232]">Atendimento presencial e online</p>
-              <p className="mt-1 text-sm leading-6 text-[#586776]">
-                Adolescentes, adultos e brasileiros no exterior.
-              </p>
             </div>
           </div>
         </div>

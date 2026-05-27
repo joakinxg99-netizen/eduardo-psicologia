@@ -135,10 +135,10 @@ export default function Home() {
 
         <div
           id="inicio"
-          className="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center gap-11 px-5 pb-16 pt-28 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-10 lg:pb-24 lg:pt-34"
+          className="relative z-10 mx-auto grid max-w-7xl items-center gap-8 px-5 pb-10 pt-25 sm:min-h-screen sm:px-8 sm:pb-16 sm:pt-28 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16 lg:px-10 lg:pb-24 lg:pt-34"
         >
           <div className="max-w-3xl">
-            <div className="mb-7 flex items-center gap-4 sm:mb-9">
+            <div className="mb-5 flex items-center gap-4 sm:mb-9">
               <span className="h-px w-12 bg-[#1f6f9f] sm:w-16" />
               <span className="text-sm font-medium text-[#526575]">Atendimento clínico presencial e online</span>
             </div>
@@ -147,7 +147,7 @@ export default function Home() {
               Eduardo Leal
             </h1>
 
-            <div className="mt-6 space-y-1.5 border-l border-[#9fb8cc] pl-4 sm:mt-7 sm:pl-5">
+            <div className="mt-4 space-y-1.5 border-l border-[#9fb8cc] pl-4 sm:mt-7 sm:pl-5">
               <p className="text-base font-semibold text-[#123d66] sm:text-lg">
                 Psicólogo Clínico • CRP 01/16621
               </p>
@@ -156,11 +156,11 @@ export default function Home() {
               </p>
             </div>
 
-            <p className="mt-7 max-w-2xl text-lg leading-7 text-[#435260] sm:text-xl sm:leading-8">
+            <p className="mt-5 max-w-2xl text-lg leading-7 text-[#435260] sm:mt-7 sm:text-xl sm:leading-8">
               Atendimento psicológico presencial e online para adolescentes e adultos, com escuta ética, presença clínica e cuidado responsável no Brasil e para brasileiros no exterior.
             </p>
 
-            <div className="mt-8 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:items-center">
+            <div className="mt-6 flex flex-col gap-3 sm:mt-9 sm:flex-row sm:items-center">
               <a
                 href="https://wa.me/5561999027212"
                 className="inline-flex h-13 items-center justify-center rounded-md bg-[#123d66] px-8 text-sm font-semibold text-white shadow-[0_20px_48px_rgba(18,61,102,0.24)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#0d3154] hover:shadow-[0_26px_66px_rgba(18,61,102,0.28)]"
@@ -214,8 +214,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="quem-sou" className="overflow-hidden bg-white px-5 py-18 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-11 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-16">
+      <section id="quem-sou" className="overflow-hidden bg-white px-5 py-12 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-8 sm:gap-11 lg:grid-cols-[0.92fr_1.08fr] lg:items-center lg:gap-16">
           <div className="relative">
             <div className="absolute -left-10 top-10 hidden h-[78%] w-24 bg-[#eef4f9] lg:block" />
             <div className="absolute -right-5 -top-5 hidden h-full w-full rounded-md border border-[#c2d2df] lg:block" />
@@ -235,7 +235,7 @@ export default function Home() {
             <h2 className="mt-4 max-w-3xl text-3xl font-semibold leading-tight tracking-normal text-[#122232] sm:text-4xl">
               Escuta ética, presença clínica e cuidado individualizado.
             </h2>
-            <div className="mt-6 max-w-3xl space-y-4 text-base leading-7 text-[#4c5b68] sm:text-lg sm:leading-8">
+            <div className="mt-4 max-w-3xl space-y-4 text-base leading-7 text-[#4c5b68] sm:mt-6 sm:text-lg sm:leading-8">
               <p>
                 Psicólogo clínico, especialista em Gestalt-terapia, com atendimento presencial e online para adolescentes e adultos.
               </p>
@@ -244,9 +244,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="atuacao" className="bg-[linear-gradient(180deg,#f4f8fb_0%,#eef4f9_100%)] px-5 py-18 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
+      <section id="atuacao" className="bg-[linear-gradient(180deg,#f4f8fb_0%,#eef4f9_100%)] px-5 py-12 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
         <div className="mx-auto max-w-7xl">
-          <div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
+          <div className="flex flex-col gap-4 sm:gap-6 lg:flex-row lg:items-end lg:justify-between">
             <div className="max-w-3xl">
               <p className="text-sm font-semibold tracking-[0.2em] text-[#1f6f9f] uppercase">Áreas de atuação</p>
               <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-normal text-[#122232] sm:text-4xl">
@@ -257,7 +257,7 @@ export default function Home() {
               Cada processo respeita o ritmo e a história de quem procura atendimento.
             </p>
           </div>
-          <div className="mt-10 grid gap-4 md:grid-cols-2 lg:mt-12 lg:grid-cols-3">
+          <div className="mt-7 grid gap-3 sm:mt-10 sm:gap-4 md:grid-cols-2 lg:mt-12 lg:grid-cols-3">
             {areas.map((area, index) => (
               <div
                 key={area.titulo}
@@ -269,7 +269,7 @@ export default function Home() {
                   </span>
                   <span className="h-px w-12 bg-[#a8bed0] transition duration-300 group-hover:w-16 group-hover:bg-[#1f6f9f]" />
                 </div>
-                <h3 className="mt-6 text-xl font-semibold leading-7 text-[#122232] sm:text-2xl">{area.titulo}</h3>
+                <h3 className="mt-4 text-xl font-semibold leading-7 text-[#122232] sm:mt-6 sm:text-2xl">{area.titulo}</h3>
                 <p className="mt-3 text-sm leading-6 text-[#5a6977] sm:text-base sm:leading-7">{area.texto}</p>
               </div>
             ))}
@@ -277,21 +277,21 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="abordagem" className="relative overflow-hidden bg-[#101f2e] px-5 py-18 text-white sm:px-8 sm:py-22 lg:px-10 lg:py-30">
+      <section id="abordagem" className="relative overflow-hidden bg-[#101f2e] px-5 py-12 text-white sm:px-8 sm:py-22 lg:px-10 lg:py-30">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(90,144,184,0.28),transparent_34%),linear-gradient(135deg,#101f2e_0%,#152d42_54%,#0d1a27_100%)]" />
         <div className="absolute inset-x-0 top-0 h-px bg-[linear-gradient(90deg,transparent,rgba(143,194,230,0.85),transparent)]" />
-        <div className="relative mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.84fr_1.16fr] lg:items-start lg:gap-14">
+        <div className="relative mx-auto grid max-w-7xl gap-7 sm:gap-10 lg:grid-cols-[0.84fr_1.16fr] lg:items-start lg:gap-14">
           <div>
             <p className="text-sm font-semibold tracking-[0.2em] text-[#8fc2e6] uppercase">Gestalt-terapia</p>
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-normal sm:text-4xl">
               Um trabalho clínico sobre presença, consciência e contato.
             </h2>
-            <p className="mt-5 max-w-md text-base leading-7 text-[#c9d9e6] sm:text-lg sm:leading-8">
+            <p className="mt-4 max-w-md text-base leading-7 text-[#c9d9e6] sm:mt-5 sm:text-lg sm:leading-8">
               Uma abordagem que favorece presença, vínculo e atenção ao modo como a vida se organiza no presente.
             </p>
           </div>
-          <div className="rounded-md border border-white/12 bg-white/[0.06] p-6 shadow-[0_36px_100px_rgba(0,0,0,0.24)] backdrop-blur-md sm:p-9">
-            <div className="space-y-4 text-base leading-7 text-[#dce7f0] sm:text-lg sm:leading-8">
+          <div className="rounded-md border border-white/12 bg-white/[0.06] p-5 shadow-[0_36px_100px_rgba(0,0,0,0.24)] backdrop-blur-md sm:p-9">
+            <div className="space-y-3 text-base leading-7 text-[#dce7f0] sm:space-y-4 sm:text-lg sm:leading-8">
               <p>
                 A Gestalt-terapia considera corpo, emoções, vínculos e contexto.
               </p>
@@ -306,18 +306,18 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[#122232] px-5 py-18 text-white sm:px-8 sm:py-22 lg:px-10 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-11 lg:grid-cols-2 lg:gap-14">
+      <section className="bg-[#122232] px-5 py-12 text-white sm:px-8 sm:py-22 lg:px-10 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-8 sm:gap-11 lg:grid-cols-2 lg:gap-14">
           <div>
             <p className="text-sm font-semibold tracking-[0.2em] text-[#8fc2e6] uppercase">Formação acadêmica</p>
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-normal sm:text-4xl">
               Base técnica, estudo constante e compromisso ético.
             </h2>
-            <div className="mt-8 space-y-3">
+            <div className="mt-5 space-y-2.5 sm:mt-8 sm:space-y-3">
               {formacao.map((item) => (
                 <div
                   key={item}
-                  className="rounded-md border border-white/10 bg-white/[0.04] px-5 py-3.5 text-base leading-7 text-[#d9e5ef] transition hover:border-[#8fc2e6]/40 hover:bg-white/[0.07] sm:text-lg sm:leading-8"
+                  className="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2.5 text-base leading-7 text-[#d9e5ef] transition hover:border-[#8fc2e6]/40 hover:bg-white/[0.07] sm:px-5 sm:py-3.5 sm:text-lg sm:leading-8"
                 >
                   {item}
                 </div>
@@ -329,11 +329,11 @@ export default function Home() {
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-normal sm:text-4xl">
               Prática clínica orientada por escuta e responsabilidade.
             </h2>
-            <div className="mt-8 space-y-3">
+            <div className="mt-5 space-y-2.5 sm:mt-8 sm:space-y-3">
               {experiencia.map((item) => (
                 <div
                   key={item}
-                  className="rounded-md border border-white/10 bg-white/[0.04] px-5 py-3.5 text-base leading-7 text-[#d9e5ef] transition hover:border-[#8fc2e6]/40 hover:bg-white/[0.07] sm:text-lg sm:leading-8"
+                  className="rounded-md border border-white/10 bg-white/[0.04] px-4 py-2.5 text-base leading-7 text-[#d9e5ef] transition hover:border-[#8fc2e6]/40 hover:bg-white/[0.07] sm:px-5 sm:py-3.5 sm:text-lg sm:leading-8"
                 >
                   {item}
                 </div>
@@ -343,19 +343,19 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-[linear-gradient(135deg,#f8fafc_0%,#edf4f9_100%)] px-5 py-18 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
+      <section className="bg-[linear-gradient(135deg,#f8fafc_0%,#edf4f9_100%)] px-5 py-12 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-7 sm:gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-center">
           <div>
             <p className="text-sm font-semibold tracking-[0.2em] text-[#1f6f9f] uppercase">Atendimento online</p>
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-normal text-[#122232] sm:text-4xl">
               Atendimento online para o Brasil e brasileiros no exterior.
             </h2>
           </div>
-          <div className="rounded-md border border-[#d5e0e9] bg-white/88 p-6 shadow-[0_28px_80px_rgba(18,34,50,0.08)] backdrop-blur sm:p-9">
+          <div className="rounded-md border border-[#d5e0e9] bg-white/88 p-5 shadow-[0_28px_80px_rgba(18,34,50,0.08)] backdrop-blur sm:p-9">
             <p className="text-base leading-7 text-[#465562] sm:text-lg sm:leading-8">
               Continuidade, privacidade e escuta em português para brasileiros no Brasil e no exterior.
             </p>
-            <div className="mt-6 grid gap-3 sm:grid-cols-3">
+            <div className="mt-4 grid gap-2.5 sm:mt-6 sm:gap-3 sm:grid-cols-3">
               {["Sigilo profissional", "Horários alinhados", "Escuta em português"].map((item) => (
                 <div
                   key={item}
@@ -367,7 +367,7 @@ export default function Home() {
             </div>
             <a
               href="https://wa.me/5561999027212"
-              className="mt-7 inline-flex h-13 w-full items-center justify-center rounded-md bg-[#123d66] px-7 text-sm font-semibold text-white shadow-xl shadow-[#123d66]/18 transition duration-300 hover:-translate-y-0.5 hover:bg-[#0d3154] sm:w-auto"
+              className="mt-5 inline-flex h-13 w-full items-center justify-center rounded-md bg-[#123d66] px-7 text-sm font-semibold text-white shadow-xl shadow-[#123d66]/18 transition duration-300 hover:-translate-y-0.5 hover:bg-[#0d3154] sm:mt-7 sm:w-auto"
             >
               Conversar pelo WhatsApp
             </a>
@@ -375,40 +375,40 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="faq" className="bg-white px-5 py-18 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
+      <section id="faq" className="bg-white px-5 py-12 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
         <div className="mx-auto max-w-5xl">
           <p className="text-sm font-semibold tracking-[0.2em] text-[#1f6f9f] uppercase">FAQ</p>
           <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-normal text-[#122232] sm:text-4xl">
             Perguntas frequentes
           </h2>
-          <div className="mt-9 divide-y divide-[#d6e0e9] rounded-md border border-[#d6e0e9] bg-[#fbfcfe] shadow-[0_24px_70px_rgba(18,34,50,0.06)] sm:mt-10">
+          <div className="mt-6 divide-y divide-[#d6e0e9] rounded-md border border-[#d6e0e9] bg-[#fbfcfe] shadow-[0_24px_70px_rgba(18,34,50,0.06)] sm:mt-10">
             {faqs.map((faq) => (
-              <details key={faq.pergunta} className="group px-5 py-5 sm:px-7 sm:py-6">
+              <details key={faq.pergunta} className="group px-4 py-4 sm:px-7 sm:py-6">
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-left text-lg font-semibold text-[#122232] transition hover:text-[#123d66] sm:text-xl">
                   {faq.pergunta}
                   <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[#b9cad8] bg-white text-[#123d66] shadow-sm transition duration-300 group-open:rotate-45 group-hover:border-[#123d66]">
                     +
                   </span>
                 </summary>
-                <p className="mt-4 max-w-3xl text-base leading-7 text-[#4d5c69] sm:text-lg sm:leading-8">{faq.resposta}</p>
+                <p className="mt-3 max-w-3xl text-base leading-7 text-[#4d5c69] sm:mt-4 sm:text-lg sm:leading-8">{faq.resposta}</p>
               </details>
             ))}
           </div>
         </div>
       </section>
 
-      <section id="contato" className="bg-[#eef4f9] px-5 py-18 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
+      <section id="contato" className="bg-[#eef4f9] px-5 py-12 sm:px-8 sm:py-22 lg:px-10 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-7 sm:gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <div>
             <p className="text-sm font-semibold tracking-[0.2em] text-[#1f6f9f] uppercase">Contato</p>
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-normal text-[#122232] sm:text-4xl">
               Agende seu atendimento
             </h2>
-            <p className="mt-5 max-w-xl text-base leading-7 text-[#4d5c69] sm:text-lg sm:leading-8">
+            <p className="mt-3 max-w-xl text-base leading-7 text-[#4d5c69] sm:mt-5 sm:text-lg sm:leading-8">
               Atendimento presencial e online para adolescentes e adultos.
             </p>
           </div>
-          <div className="rounded-md border border-[#d1dde7] bg-white p-6 shadow-[0_28px_80px_rgba(18,34,50,0.1)] sm:p-9">
+          <div className="rounded-md border border-[#d1dde7] bg-white p-5 shadow-[0_28px_80px_rgba(18,34,50,0.1)] sm:p-9">
             <p className="text-base leading-7 text-[#455461] sm:text-lg sm:leading-8">
               Eduardo Campos Borges Leal
               <br />
@@ -416,7 +416,7 @@ export default function Home() {
               <br />
               Especialista em Gestalt-terapia
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <div className="mt-5 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:flex-wrap">
               <a
                 href="https://wa.me/5561999027212"
                 className="inline-flex h-13 items-center justify-center rounded-md bg-[#123d66] px-7 text-sm font-semibold text-white shadow-xl shadow-[#123d66]/18 transition duration-300 hover:-translate-y-0.5 hover:bg-[#0d3154]"
@@ -456,7 +456,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="bg-[#122232] px-5 py-10 text-[#d9e5ef] sm:px-8 lg:px-10">
+      <footer className="bg-[#122232] px-5 py-7 text-[#d9e5ef] sm:px-8 sm:py-10 lg:px-10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm sm:flex-row sm:items-center sm:justify-between">
           <p>Eduardo Campos Borges Leal | Psicólogo Clínico | CRP 01/16621</p>
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">

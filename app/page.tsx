@@ -416,7 +416,7 @@ export default function Home() {
               <br />
               Especialista em Gestalt-terapia
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
                 href="https://wa.me/5561999027212"
                 className="inline-flex h-13 items-center justify-center rounded-md bg-[#123d66] px-7 text-sm font-semibold text-white shadow-xl shadow-[#123d66]/18 transition duration-300 hover:-translate-y-0.5 hover:bg-[#0d3154]"
@@ -429,6 +429,28 @@ export default function Home() {
               >
                 edcbleal@gmail.com
               </a>
+              <a
+                href="https://www.instagram.com/eduardoleal.psicologo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex h-13 items-center justify-center gap-2 rounded-md border border-[#c0ccd8] bg-white px-7 text-sm font-semibold text-[#123d66] transition duration-300 hover:-translate-y-0.5 hover:border-[#123d66] hover:bg-[#f7f9fc]"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect width="18" height="18" x="3" y="3" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M17.5 6.5h.01" />
+                </svg>
+                Instagram
+              </a>
             </div>
           </div>
         </div>
@@ -437,7 +459,31 @@ export default function Home() {
       <footer className="bg-[#122232] px-5 py-10 text-[#d9e5ef] sm:px-8 lg:px-10">
         <div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm sm:flex-row sm:items-center sm:justify-between">
           <p>Eduardo Campos Borges Leal | Psicólogo Clínico | CRP 01/16621</p>
-          <p>Atendimento psicológico presencial e online para adolescentes e adultos.</p>
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:gap-5">
+            <p>Atendimento psicológico presencial e online para adolescentes e adultos.</p>
+            <a
+              href="https://www.instagram.com/eduardoleal.psicologo"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 font-semibold text-[#d9e5ef] transition duration-300 hover:-translate-y-0.5 hover:text-white"
+            >
+              <svg
+                aria-hidden="true"
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect width="18" height="18" x="3" y="3" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="M17.5 6.5h.01" />
+              </svg>
+              Instagram
+            </a>
+          </div>
         </div>
       </footer>
 

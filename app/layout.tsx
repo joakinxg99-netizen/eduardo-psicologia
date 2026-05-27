@@ -13,9 +13,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Eduardo Campos Borges Leal | Psicólogo Clínico",
+  metadataBase: new URL("https://eduardolealpsicologia.com.br"),
+  title: "Eduardo Leal | Psicólogo Clínico",
   description:
     "Atendimento psicológico presencial e online para adolescentes e adultos no Brasil e para brasileiros no exterior.",
+  openGraph: {
+    title: "Eduardo Leal | Psicólogo Clínico",
+    description:
+      "Atendimento psicológico presencial e online para adolescentes e adultos no Brasil e para brasileiros no exterior.",
+    type: "website",
+    url: "https://eduardolealpsicologia.com.br",
+    images: [
+      {
+        url: "/social-preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Eduardo Leal | Psicólogo Clínico",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Eduardo Leal | Psicólogo Clínico",
+    description:
+      "Atendimento psicológico presencial e online para adolescentes e adultos no Brasil e para brasileiros no exterior.",
+    images: ["/social-preview.png"],
+  },
 };
 
 export default function RootLayout({

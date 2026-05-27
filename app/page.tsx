@@ -129,15 +129,37 @@ export default function Home() {
         <div className="absolute inset-x-0 top-0 z-20 border-b border-[#d6e2ec]/80 bg-white/78 shadow-[0_10px_40px_rgba(18,34,50,0.035)] backdrop-blur-xl">
           <nav
             aria-label="Navegação principal"
-            className="mx-auto flex h-22 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10"
+            className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 sm:h-22 sm:px-8 lg:px-10"
           >
             <a href="#inicio" className="group flex flex-col leading-tight">
-              <span className="text-[1.15rem] font-semibold tracking-normal text-[#122232] transition group-hover:text-[#123d66]">
+              <span className="text-base font-semibold tracking-normal text-[#122232] transition group-hover:text-[#123d66] sm:text-[1.15rem]">
                 Eduardo Leal
               </span>
-              <span className="mt-0.5 text-sm font-medium tracking-normal text-[#6b7b88] transition group-hover:text-[#315d80]">
+              <span className="mt-0.5 text-xs font-medium tracking-normal text-[#6b7b88] transition group-hover:text-[#315d80] sm:text-sm">
                 Psicólogo Clínico
               </span>
+            </a>
+            <a
+              href="https://www.instagram.com/eduardoleal.psicologo"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram de Eduardo Leal"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#c9d5df] bg-white/62 text-[#123d66] shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-[#123d66] hover:bg-white md:hidden"
+            >
+              <svg
+                aria-hidden="true"
+                className="h-4 w-4"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.8"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <rect width="18" height="18" x="3" y="3" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <path d="M17.5 6.5h.01" />
+              </svg>
             </a>
             <div className="hidden items-center gap-8 text-sm font-medium text-[#536270] md:flex">
               <a className="transition hover:text-[#123d66]" href="#quem-sou">
@@ -158,11 +180,33 @@ export default function Home() {
               >
                 Contato
               </a>
+              <a
+                href="https://www.instagram.com/eduardoleal.psicologo"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram de Eduardo Leal"
+                className="inline-flex h-10 w-10 items-center justify-center rounded-full border border-[#c9d5df] bg-white/60 text-[#123d66] shadow-sm transition duration-300 hover:-translate-y-0.5 hover:border-[#123d66] hover:bg-white"
+              >
+                <svg
+                  aria-hidden="true"
+                  className="h-4 w-4"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <rect width="18" height="18" x="3" y="3" rx="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <path d="M17.5 6.5h.01" />
+                </svg>
+              </a>
             </div>
           </nav>
         </div>
 
-        <div className="absolute left-0 top-24 h-px w-full bg-[linear-gradient(90deg,transparent,#9fb8cc,transparent)]" />
+        <div className="absolute left-0 top-18 h-px w-full bg-[linear-gradient(90deg,transparent,#9fb8cc,transparent)] sm:top-24" />
         <div className="absolute -left-36 top-36 h-96 w-96 rounded-full bg-[#d8e7f2]/60 blur-3xl" />
         <div className="absolute bottom-0 right-0 h-[28rem] w-[28rem] rounded-full bg-[#e9f0f6]/85 blur-3xl" />
         <div className="absolute bottom-0 left-0 h-36 w-full bg-[linear-gradient(180deg,transparent,#ffffff_92%)]" />

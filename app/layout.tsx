@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -17,6 +18,26 @@ export const metadata: Metadata = {
   title: "Eduardo Leal | Psicólogo Clínico",
   description:
     "Atendimento psicológico presencial e online para adolescentes e adultos no Brasil e brasileiros no exterior.",
+  keywords: [
+    "psicólogo clínico",
+    "Gestalt-terapia",
+    "psicoterapia online",
+    "saúde mental",
+    "ansiedade",
+    "autoestima",
+    "brasileiros no exterior",
+  ],
+  alternates: {
+    canonical: "https://eduardolealpsicologia.com.br",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: {
     title: "Eduardo Leal | Psicólogo Clínico",
     description:
@@ -53,7 +74,10 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }

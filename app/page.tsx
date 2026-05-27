@@ -86,9 +86,43 @@ const faqs = [
   },
 ];
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": ["MedicalBusiness", "ProfessionalService", "Psychologist"],
+  name: "Eduardo Leal",
+  legalName: "Eduardo Campos Borges Leal",
+  description:
+    "Atendimento psicológico presencial e online para adolescentes e adultos no Brasil e brasileiros no exterior.",
+  url: "https://eduardolealpsicologia.com.br",
+  email: "edcbleal@gmail.com",
+  identifier: {
+    "@type": "PropertyValue",
+    name: "CRP",
+    value: "01/16621",
+  },
+  medicalSpecialty: "Psychology",
+  serviceType: "Atendimento psicológico presencial e online",
+  areaServed: [
+    {
+      "@type": "Country",
+      name: "Brazil",
+    },
+    {
+      "@type": "Audience",
+      name: "Brasileiros no exterior",
+    },
+  ],
+  sameAs: ["https://www.instagram.com/eduardoleal.psicologo"],
+};
+
 export default function Home() {
   return (
-    <main className="bg-[#f7f9fc] text-[#1d2935]">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <main className="bg-[#f7f9fc] text-[#1d2935]">
       <style>{`html { scroll-behavior: smooth; }`}</style>
 
       <section className="relative isolate overflow-hidden bg-[linear-gradient(135deg,#fbfcfe_0%,#edf4f9_45%,#ffffff_100%)]">
@@ -501,6 +535,7 @@ export default function Home() {
           <path d="M16.04 3C9.42 3 4.03 8.32 4.03 14.86c0 2.1.56 4.15 1.63 5.95L4 27l6.38-1.64a12.18 12.18 0 0 0 5.66 1.42c6.62 0 12.01-5.32 12.01-11.86C28.05 8.32 22.66 3 16.04 3Zm0 21.77c-1.78 0-3.52-.47-5.04-1.37l-.36-.21-3.78.97.99-3.61-.24-.37a9.78 9.78 0 0 1-1.55-5.32c0-5.43 4.48-9.84 9.98-9.84 5.5 0 9.98 4.41 9.98 9.84 0 5.49-4.48 9.91-9.98 9.91Zm5.47-7.37c-.3-.15-1.78-.87-2.06-.97-.28-.1-.48-.15-.68.15-.2.29-.78.96-.96 1.16-.18.2-.35.22-.65.07-.3-.15-1.27-.46-2.42-1.48-.89-.78-1.49-1.74-1.67-2.04-.18-.29-.02-.45.13-.6.14-.14.3-.36.45-.54.15-.17.2-.29.3-.49.1-.2.05-.37-.03-.52-.08-.15-.68-1.62-.93-2.22-.24-.58-.49-.5-.68-.51h-.58c-.2 0-.52.07-.79.37-.28.29-1.04 1-1.04 2.44 0 1.44 1.06 2.83 1.21 3.03.15.2 2.09 3.15 5.06 4.42.71.3 1.26.48 1.69.62.71.22 1.36.19 1.87.12.57-.08 1.78-.72 2.03-1.41.25-.7.25-1.29.18-1.41-.08-.13-.28-.2-.58-.35Z" />
         </svg>
       </a>
-    </main>
+      </main>
+    </>
   );
 }

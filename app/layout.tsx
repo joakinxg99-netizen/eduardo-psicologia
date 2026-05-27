@@ -16,18 +16,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://eduardolealpsicologia.com.br"),
   title: "Eduardo Leal | Psicólogo Clínico",
   description:
-    "Atendimento psicológico presencial e online para adolescentes e adultos no Brasil e para brasileiros no exterior.",
+    "Atendimento psicológico presencial e online para adolescentes e adultos no Brasil e brasileiros no exterior.",
   openGraph: {
     title: "Eduardo Leal | Psicólogo Clínico",
     description:
-      "Atendimento psicológico presencial e online para adolescentes e adultos no Brasil e para brasileiros no exterior.",
-    type: "website",
+      "Atendimento psicológico presencial e online para adolescentes e adultos no Brasil e brasileiros no exterior.",
     url: "https://eduardolealpsicologia.com.br",
+    siteName: "Eduardo Leal Psicologia",
+    type: "website",
+    locale: "pt_BR",
     images: [
       {
-        url: "/social-preview.png",
-        width: 1200,
-        height: 630,
+        url: "/og-image.jpg",
+        width: 1080,
+        height: 1080,
         alt: "Eduardo Leal | Psicólogo Clínico",
       },
     ],
@@ -36,8 +38,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Eduardo Leal | Psicólogo Clínico",
     description:
-      "Atendimento psicológico presencial e online para adolescentes e adultos no Brasil e para brasileiros no exterior.",
-    images: ["/social-preview.png"],
+      "Atendimento psicológico presencial e online para adolescentes e adultos no Brasil e brasileiros no exterior.",
+    images: ["/og-image.jpg"],
   },
 };
 
